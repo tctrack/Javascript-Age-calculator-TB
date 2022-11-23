@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <div class="ageCalculator-section">
+        <h1>Age Calculator</h1>
+        <div class="age-wrapper">
+            <div class="form-group">
+                <label>Date</label>
+                <input maxlength="2" type="text" id="date" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+            </div>
+            <div class="form-group">
+                <label>Month</label>
+                <input maxlength="2" type="text" id="month" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+            </div>
+            <div class="form-group">
+                <label>Year</label>
+                <input maxlength="4" type="text" id="year" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+            </div>
+        </div>
+        <button id="submitBtn">Submit</button>
+    
+        <p id="ageCalculate"></p>
+    </div>
+
+
+    <script src="custom.js"></script>
+
+</body>
+</html>
